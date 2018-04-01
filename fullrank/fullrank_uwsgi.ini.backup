@@ -20,11 +20,3 @@ socket          = /home/matthew/django/fullrank/fullrank.sock
 chmod-socket    = 664
 # clear environment on exit
 vacuum          = true
-
-buffer-size     = 65535
-
-# set https on
-env             = HTTPS=on
-
-
-

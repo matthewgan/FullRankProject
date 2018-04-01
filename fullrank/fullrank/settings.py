@@ -28,7 +28,7 @@ SECRET_KEY = '@3@)!t$3duh6lwi9$8=xdzg2qq3sb=v90dzz!7dx+r2ct=!7b2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "101.132.174.202", "fullrank.cc", "www.fullrank.cc"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "101.132.174.202", "fullrank.cc", "www.fullrank.cc", "wuzhanggui.shop", "www.wuzhanggui.shop"]
 
 
 # Application definition
@@ -124,3 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
